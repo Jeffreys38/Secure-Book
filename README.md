@@ -61,6 +61,7 @@ npm start
 ** Note:
 The first time, you don't have music data so you will see the center-right bar that doesn't show the image (it won't affect to process, you can fix it).
 After you fill YouTube URL, it will work well.
+
 Enjoy it
 ```
 
