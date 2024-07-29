@@ -17,6 +17,7 @@ This project is a simple social media application built with React.js for the fr
 - Post video / image / text
 
 ## Project Structure
+```bash
 server
 ├── api
 ├── app.js
@@ -37,6 +38,7 @@ client
 ├── public
 ├── src
 └── ssl
+```
 
 ## Getting Started
 
