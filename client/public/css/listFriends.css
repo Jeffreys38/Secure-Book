@@ -1,0 +1,7 @@
+#list-friends {
+    overflow-y: auto;
+}
+
+#list-friends::-webkit-scrollbar {
+    display: none;
+}

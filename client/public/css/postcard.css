@@ -1,0 +1,40 @@
+:root {
+    --number-post-in-row-profile: 3;
+}
+
+.postcard {
+    width: calc(100% / var(--number-post-in-row-profile) - (var(--number-post-in-row-profile) - 1) * 15px);
+    cursor: pointer;
+}
+
+.postcard img, 
+.postcard iframe, 
+.postcard video {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.postcard .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.postcard .content {
+    text-align: left;
+    margin-top: 4px;
+}
+
+.postcard .content .title {
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.postcard .content .date {
+    margin-top: 5px;
+    color: #afafaf;
+    font-size: 14px;
+}

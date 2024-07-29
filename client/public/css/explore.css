@@ -1,0 +1,4 @@
+#explore {
+    margin-top: var(--f2c-header);
+    height: calc(100% - var(--f2c-header));
+}

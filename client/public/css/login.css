@@ -1,0 +1,241 @@
+
+:root {
+    --f2c-disabled-button-background: #E4E6EB;
+}
+
+/*--------------------------------------Issue on Edge-------------------------------*/
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+#wrap-full { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/*--------------------------------------Login-form-------------------------------*/
+#wrapper-login {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    backdrop-filter: blur(80px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+#wrapper-login h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+#wrapper-login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box #img-user {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box #img-lock {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#wrapper-login .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin-right: -15px 0 15px;
+
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+#wrapper-login .btn {
+    width: 100%;
+    height: 46px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    margin: 20px 0 20px;
+}
+
+#wrapper-login .btn:hover {
+    opacity: 0.9;
+}
+
+#wrapper-login .register-btn {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+}
+
+.register-btn p #btn-register {
+    background: #12c648;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #f3f7ff;
+    padding: 3px 11px;
+}
+
+.register-btn p #btn-register:hover {
+    opacity: 0.9;
+}
+
+/*--------------------------------------------register-form-------------------------------------------*/
+.register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('http://192.168.1.5:3001/theme/theme-login.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+.register-form-content {
+    width: 450px;
+    height: 570px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.register-form form {
+    padding: 12px 40px;
+
+}
+
+.register-form-content h2 {
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.register-form-content h2 span {
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 0;
+    right: 5px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    top: 10px;
+    color: #707989;
+    font-size: 20px;
+}
+
+.register-form-content h2 span:hover {
+    opacity: 0.9;
+}
+
+.register-form-content form input,
+select {
+    height: 40px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.register-form-content form select option {
+    background-color: #0d0c0c;
+}
+
+.register-form-content form button {
+    margin-top: 20px;
+    height: 30px;
+    width: 30%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    margin: 25px 0 20px;
+}
+
+.register-form-content form button:hover {
+    opacity: 0.9;
+}

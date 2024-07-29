@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+#chat-app {
+    display: flex;
+    height: 100%;
+        
+    background-color: white;
+}
+
+#chat-app #wrap-content {
+    height: calc(100% - var(--f2c-header));
+    margin-top: var(--f2c-header);
+}
+
+:root {
+    --f2c-height-boxChat: 50px;
+    --f2c-height-headingBoxChat: 50px;
+}
+
+#chat-app #right-side-bar {
+    width: 22%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.header-chat {
+    left: 0 !important;
+    padding-left: 30px;
+    border-bottom: 1px solid black;
+    box-shadow: none !important;
+}
+
+.header-chat > h3 {
+    font-size: 23px;
+    flex: 1;
+}
+
+#wrap-message {
+    width: 100%;
+}
+
+#viewchat {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    overflow-y: auto;
+    height: calc(100% - (var(--f2c-height-boxChat) + var(--f2c-height-headingBoxChat)));
+    padding: 15px;
+    margin-top: 50px;
+    color: black;
+    /* background-image: url("http://127.0.0.1:3001/theme/theme-chat.jpg");
+    background-size: contain; */
+}
+
+#viewchat .comment-right {
+    justify-content: flex-end;
+}
+
+#viewchat .comment-right .avatar {
+    margin-left: 10px;
+}
+
+#viewchat .comment-right .box {
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+#viewchat .comment-left .box {
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+#boxChat {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 6px -4px gray;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#boxMessage {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#boxMessage > ul > li:not(:first-child) {
+    margin-left: 17px;
+}
+
+#boxMessage > div:first-child {
+    flex: 1;
+}
+
+#boxMessage > div:last-child {
+    margin-left: 14px;
+    width: 100%;
+}
+
+#boxMessage textarea {
+    width: 100%;
+    border-radius: 47px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: var(--f2c-post-content);
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    text-align: justify;
+}
+
+#boxMessage #btn {
+    cursor: pointer;
+}
+
+#boxMessage #btn:hover {
+    opacity: 0.8;
+}
+
+.post-comment  {
+    border-radius: 4px !important;
+}
+
+#viewchat > .comment:not(:first-child) {
+    margin-top: 15px;
+}
+
+#viewchat > .comment-right {
+    justify-content: flex-end;
+}
+
+#viewchat > .comment-right img {
+    margin-left: 5px;
+}
+
+#boxMessage #sticker-box  {
+    right: -350px;
+}

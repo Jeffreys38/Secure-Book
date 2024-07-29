@@ -1,0 +1,23 @@
+#sticker-box {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+
+}
+
+.sticker {
+    position: relative;
+    display: inline-block;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.sticker img {
+    width: 100px;
+}
+
+.sticker .close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+}

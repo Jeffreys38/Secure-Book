@@ -1,0 +1,76 @@
+:root {
+    --width-musicPlayer: 85px;
+}
+
+#musicPlayerBar {
+    position: fixed;
+    right: calc(100vw - var(--f2c-vertical-navigation-bar-size) - 80vw);
+    top: calc(50% + var(--f2c-header));
+    transform: translateY(-50%);
+    width: var(--width-musicPlayer);
+    height: 62.58vh;
+    background-color: white;
+    border-top-right-radius: 46px;
+    border-bottom-right-radius: 46px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#musicPlayerBar #albumCover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#musicPlayerBar #main-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 35%;
+}
+
+#musicPlayerBar #albumCover + div {
+    margin-top: 10px;
+}
+
+#musicPlayerBar > div {
+    width: 100%;
+}
+
+#musicPlayerBar .icon {
+    display: block;
+}
+
+#musicPlayerBar .icon:hover {
+    opacity: 0.6;
+}
+
+#musicPlayerBar #scrolling-text-container {
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#musicPlayerBar #scrolling-text-container  > p {
+    display: inline-block;
+    white-space: nowrap; /* Ngăn chữ xuống dòng */
+    animation: scrollText 10s linear infinite; 
+}
+
+@keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Bắt đầu từ phải ra trái */
+    }
+    100% {
+      transform: translateX(-100%); /* Di chuyển về phải */
+    }
+  }

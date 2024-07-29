@@ -1,0 +1,201 @@
+.disable {
+    display: none !important;
+}
+
+.more {
+    position: relative;
+    z-index: 0;
+}
+
+.tooltips-active {
+    display: block !important;
+}
+
+.more .tooltips {
+    position: absolute;
+    background-color: white;
+    border-radius: 9px;
+    right: 69px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    display: none;
+}
+
+.more .tooltips li {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 8px 10px;
+    user-select: none;
+}
+
+.more .tooltips span {
+    margin-right: 5px;
+}
+
+.more .tooltips li:hover {
+    background-color: rgba(22,24,35,.05);
+    cursor: pointer;
+}
+
+.shape-effect__love {
+    color: #ff002d;
+}
+
+.no-select {
+    user-select: none;
+}
+
+.post video {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.comment .sticker {
+    width: 15%;
+}
+
+/*----GROUP COMMENT-----*/
+.group-comment {
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+.group-comment > .comment:not(:first-child) {
+    margin-top: 15px;
+}
+
+.comment {
+    display: flex;
+}
+
+.comment .box {
+    margin-left: 10px;
+    background: bisque;
+    padding: 10px 14px;
+    width: max-content;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+.comment .sender {
+
+}
+
+.comment .text {
+    margin-top: 3px;
+}
+/*------------END GROUP COMMENT----------*/
+
+/* MODAL FORM */
+.modal {
+    background-color: white;
+    font-family: Segoe UI, Helvetica, sans-serif;
+    width: 800px;
+    border-radius: 5px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal span {
+    cursor: pointer;
+}
+
+.modal-textarea {
+    resize: none;
+    border: none;
+    font-family: 14px;
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+    height: 40%;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+}
+
+.modal .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.modal input {
+    width: 100%;
+    font-family: inherit;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.modal-text__sub {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+}
+
+.modal .author {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.modal-content {
+    overflow-y: auto;
+    height: 540px;
+    flex: 1;
+}
+
+.modal-content > div,
+.modal-content > textarea
+{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.modal .media {
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    flex: 1.2;
+}
+
+.modal-title {
+
+}
+
+.modal-text__main {
+    color: var(--f2c-color-primary);
+    font-weight: 600;
+}
+
+.modal-text__main:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.modal-sub {
+    opacity: 0.7;
+}
+
+.modal-body {
+    display: flex;
+    flex: 1;
+}
+
+.modal-body video 
+{
+    width: 50%;
+}
+
+.modal-body #icon-media > div {
+    margin-left: 10px;
+}
+/*------------END MODAL FORM----------*/
