@@ -5,7 +5,7 @@ This project is a simple social media application built with React.js for the fr
 ## Prerequisites
 
 - Node.js and npm
-- MongoDB (or any other preferred database)
+- MongoDB
 
 ## Usable Function
 - Message
