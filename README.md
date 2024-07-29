@@ -1,5 +1,5 @@
 # Social Media Project
-This project is a simple social media application built with React.js for the front end and Node.js, Express.js for the back end.
+This project is a simple social media application built with React.js for the front end and Node.js and Express.js for the back end.
 <img src="https://www.fenews.co.uk/wp-content/uploads/2022/01/social-media-1200x800.jpg" height="400px" width="100%" style="object-fit: cover">
 
 ## Prerequisites
@@ -9,12 +9,12 @@ This project is a simple social media application built with React.js for the fr
 
 ## Usable Function
 - Message
-- Add friend
-- Fill in the youtube url -> It will automatically download and convert to mp3
+- Add Friend
+- Fill in the YouTube URL -> It will automatically download and convert to mp3
 - Profile
-- Share post / profile url
+- Share post/profile URL
 - CRUD Post
-- Post video / image / text
+- Post video/image/text
 
 ## Project Structure
 ```bash
@@ -58,6 +58,9 @@ npm start
 cd client
 npm start
 
+** Note:
+The first time, you don't have music data so you will see the center-right bar that doesn't show the image (it won't affect to process, you can fix it).
+After you fill YouTube URL, it will work well.
 Enjoy it
 ```
 
