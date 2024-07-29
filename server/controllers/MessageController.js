@@ -65,9 +65,7 @@ export default class MessageController {
         const db = client.db(process.env.DB_NAME);
 
         try {
-            // Người nhận là owner
-            // Người gửi phải khác nhau
-            // Sắp xếp theo thời gian gửi sớm nhất
+            // Sort by timestamp
             const messages = await db.collection(collectionName).aggregate([
                 {
                   '$match': {
